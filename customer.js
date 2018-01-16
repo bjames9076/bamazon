@@ -45,7 +45,7 @@ function storeOperation() {
         },
     ]).then(function (user) {
 
-        connection.query('SELECT * FROM products JOIN departments ON products.department_name = departments.department_name', function(err, res) {
+        connection.query('SELECT * FROM products ', function(err, res) {
             if (err) throw err;
 
             if(res[user.itemNum - 1].stock_quantity > user.amount) {
@@ -53,14 +53,6 @@ function storeOperation() {
                 var total = parseFloat(user.amount) * parseFloat(res[user.itemNum - 1].price);
                 total = total.toFixed(2);
 
-                var departmentTotal = parseFloat(total) + parseFloat(res[user.itemNum - 1].TotalSales);
-                departmentTotal = departmentTotal.toFixed(2);
-
-                connection.query("UPDATE departments SET ? WHERE ?", [{
-                    TotalSales: departmentTotal
-                }, {
-                    department_name: res[user.itemNum - 1].department_name
-                }], function(error, results) {});
 
                 connection.query("UPDATE products SET ? WHERE ?", [{
                     stock_quantity: newQuantity
