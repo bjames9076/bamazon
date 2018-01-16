@@ -45,7 +45,7 @@ function storeOperation() {
         },
     ]).then(function (user) {
 
-        connection.query('SELECT * FROM products ', function(err, res) {
+        connection.query('SELECT * FROM products', function(err, res) {
             if (err) throw err;
 
             if(res[user.itemNum - 1].stock_quantity > user.amount) {

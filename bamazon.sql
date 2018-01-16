@@ -39,3 +39,6 @@ INSERT INTO `departments` (`department_id`, `department_name`, `overhead_costs`,
 	(3, 'Sports', 2000, 930.21),
 	(4, 'Home', 500, 1234.57),
 	(5, 'Electronics', 1500, 29230.29);
+
+
+    
