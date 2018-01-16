@@ -17,7 +17,7 @@ INSERT INTO `products` (`item_id`, `product_name`, `department_name`, `price`, `
 	(3, 'Eggs', 'Food', 2.99, 50),
 	(4, 'Ear Buds', 'Electronics', 49.99, 12),
 	(5, 'TV', 'Electronics', 299.99, 6),
-	(6, 'Tennis Rackets', 'Sports', 17.99, 20),
+	(6, 'Tennis Racket', 'Sports', 17.99, 20),
 	(7, 'T-shirt', 'Clothes', 15.99, 25),
 	(8, 'Milk', 'Food', 2.49, 200),
 	(9, 'Dresser', 'Home', 199.99, 3),
