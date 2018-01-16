@@ -23,4 +23,4 @@ INSERT INTO `products` (`item_id`, `product_name`, `department_name`, `price`, `
 	(9, 'Dresser', 'Home', 199.99, 3),
 	(10, 'Basketball', 'Sports', 19.99, 10),
 	(11, 'Desk', 'Home', 99.99, 5),
-	
+
