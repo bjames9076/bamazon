@@ -12,7 +12,7 @@ npm install colors
 
 - run **node customer.js**
 	-  Table Display:
-	![Example 1](/images/customer01.png)
+	![Example 1](/images/customer01.png) 
 
 	-  Item purchase request and amount display:
 	![Example 2](/images/customer02.png)
