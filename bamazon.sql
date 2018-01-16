@@ -24,3 +24,18 @@ INSERT INTO `products` (`item_id`, `product_name`, `department_name`, `price`, `
 	(10, 'Basketball', 'Sports', 19.99, 10),
 	(11, 'Desk', 'Home', 99.99, 5),
 
+CREATE TABLE IF NOT EXISTS `departments` (
+  `department_id` int(11) NOT NULL AUTO_INCREMENT,
+  `department_name` varchar(100) NOT NULL,
+  `overhead_costs` int(11) DEFAULT NULL,
+  `total_sales` decimal(10,2) DEFAULT '0.00',
+  PRIMARY KEY (`department_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `departments` (`department_id`, `department_name`, `overhead_costs`, `total_sales`) VALUES
+	(1, 'Food', 700, 6468.98),
+	(2, 'Clothes', 900, 4520.20),
+	(3, 'Sports', 2000, 930.21),
+	(4, 'Home', 500, 1234.57),
+	(5, 'Electronics', 1500, 29230.29);
